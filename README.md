@@ -4,7 +4,7 @@
 The **Raw Material Inventory Management** project is designed to streamline the tracking and management of raw materials in a production environment. It leverages **JsonPowerDB** for lightweight and efficient database operations, providing features such as stock monitoring, inward and outward tracking, and real-time inventory updates.
 
 ## Demo Video
-LLink to view the demo video: 
+Link to view the demo video: https://drive.google.com/file/d/1gQtUtHtgOh_0AJ1r6q3KP4P-FpdsIvSf/view?usp=sharing
 
 
 ## Important Links  
