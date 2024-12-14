@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Report</title>
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head> 
+    <body>
+        <nav id="sidebar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="items.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-280h160v-160H280v160Zm240 0h160v-160H520v160ZM280-520h160v-160H280v160Zm240 0h160v-160H520v160ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+                        <span>Item Management</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="inward.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
+                        <span>Item Recieved (Inward)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="outward.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/></svg>
+                        <span>Item Issue (Outward)</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="report.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M320-440h320v-80H320v80Zm0 120h320v-80H320v80Zm0 120h200v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>
+                        <span>Item Report</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="container">
+            <div class="page-header text-center" >
+                <h2>Item Report</h2>
+            </div>
+            <form class="form-horizontal" id="iow" method="post"> 
+                <div class="form-group"> 
+                    <label class="control-label col-sm-2">Item ID: </label> 
+                    <div class="col-sm-8"> 
+                        <input type="text" class="form-control" id="iid" placeholder="Enter Item ID" name="iid" onchange="checkItemId()"> 
+                    </div> 
+                </div>
+                <br> <br>
+                <button type="button" class="btn btn-primary" id="save" onclick="buildTable()">Generate Item Report</button> 
+                <br> <br>
+                <table id="itemTable" border="1">
+                    <thead>
+                        <tr>
+                            <th>  Item ID  </th>
+                            <th>  Item Name  </th>
+                            <th>  Current Stock  </th>
+                        </tr>
+                    </thead>
+                    <tbody id="reportTable">
+                        <!-- Data rows will be appended here -->
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script> 
+        <script type="text/javascript" src="Resources/js/report.js"></script>
+        <footer style="text-align: center;">&COPY; Manasi Patil</footer>
+    </body> 
+</html>
