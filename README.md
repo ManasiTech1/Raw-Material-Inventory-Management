@@ -34,7 +34,7 @@ Item Received (Inward) Page:
 <img width="960" alt="Screenshot 2024-12-14 204253" src="https://github.com/user-attachments/assets/8d82c51d-7f78-4f6c-a446-6c9c2adfa512" />
 
 Item Issue (Outward) Page:
-<img width="960" alt="Screenshot 2024-12-14 204351" src="https://github.com/user-attachments/assets/52249e56-0607-47e6-af84-40cac9370ae3" />
+<img width="960" alt="Screenshot 2024-12-14 204312" src="https://github.com/user-attachments/assets/f1525de0-2b37-440c-874b-161cb1386874" />
 
 Item Report Page:
 <img width="960" alt="Screenshot 2024-12-14 204351" src="https://github.com/user-attachments/assets/1c142dd4-4d6a-491a-be45-86eb7d4c2151" />
